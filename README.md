@@ -8,6 +8,12 @@ Create an array of strings called `colors` that contain "orange", "red", "yellow
 
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
 
+"""
+var myColors = ["Orange","Red","Yellow","turquoise","lavander"]
+
+print( myColors[0] + "," + myColors[2] + " and " +  myColors[4] + " are some of my favorite colors")
+
+"""
 
 ## Question 2
 
