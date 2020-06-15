@@ -8,20 +8,26 @@ Create an array of strings called `colors` that contain "orange", "red", "yellow
 
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
 
-"""
+```
 var myColors = ["Orange","Red","Yellow","turquoise","lavander"]
 
 print( myColors[0] + "," + myColors[2] + " and " +  myColors[4] + " are some of my favorite colors")
 
-"""
+```
 
 ## Question 2
 
 Remove "Illinois" and "Kansas" from the array below.
 
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
+```
+var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]
 
 
+westernStates.removeAll{$0.hasPrefix("Illinois")}
+westernStates.removeAll{$0.hasPrefix("Kansas")}
+print(westernStates)
+```
 ## Question 3
 
 Iterate through the array below. For each state, print out the name of the state, a colon, and whether it is or is not **in the continental United States.**
