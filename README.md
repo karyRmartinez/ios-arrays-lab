@@ -67,6 +67,7 @@ Iterate through the array below. For each sentence, print out how many non-white
 ```for (_, element) in myFavoriteQuotes.enumerated() {
     print(element.replacingOccurrences(of: " ", with: "").count)
 }```
+//
 ```
 ## Question 5
 
