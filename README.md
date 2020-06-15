@@ -33,7 +33,20 @@ print(westernStates)
 Iterate through the array below. For each state, print out the name of the state, a colon, and whether it is or is not **in the continental United States.**
 
 `let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]`
+```
+let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]
 
+
+let notContinentalUS = ["Hawaii", "Alaska"]
+
+for (_, word) in moreStates.enumerated() {
+    if word == "Hawaii" || word == "Alaska" {
+        print("\(word) : no")
+        } else {
+            print("\(word) : yes ")
+}
+}
+```
 
 ## Question 4
 
@@ -41,11 +54,20 @@ Print out how many non-whitespace characters are in `myString`:
 
 `let myString = "This is good practice with Strings!"`
 
+```
+let myString = "This is good practice with Strings!"
+
+let replaced = myString.replacingOccurrences(of: " ", with: "")
+print(myString.count)
+```
+
 Iterate through the array below. For each sentence, print out how many non-whitespace characters are in it.
 
 `let myFavoriteQuotes = ["To be or not to be, that is the question.", "The only source of knowledge is experience.", "Mr. Gorbachev, tear down this wall!", "Four score and twenty years ago..."]`
-
-
+```for (_, element) in myFavoriteQuotes.enumerated() {
+    print(element.replacingOccurrences(of: " ", with: "").count)
+}```
+```
 ## Question 5
 
 Iterate through `garden` and place any 🌷 that you find into the `basket`. Replace any 🌷 that you pick up with `"dirt"`. Then print how many 🌷 are in your `basket`.
